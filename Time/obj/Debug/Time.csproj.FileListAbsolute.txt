@@ -1,0 +1,11 @@
+C:\Users\jayvo\Desktop\Time\bin\Debug\Time.exe.config
+C:\Users\jayvo\Desktop\Time\bin\Debug\Time.exe
+C:\Users\jayvo\Desktop\Time\bin\Debug\Time.pdb
+C:\Users\jayvo\Desktop\Time\obj\Debug\Time.csproj.AssemblyReference.cache
+C:\Users\jayvo\Desktop\Time\obj\Debug\Time.csproj.SuggestedBindingRedirects.cache
+C:\Users\jayvo\Desktop\Time\obj\Debug\Time.Properties.Resources.resources
+C:\Users\jayvo\Desktop\Time\obj\Debug\Time.csproj.GenerateResource.cache
+C:\Users\jayvo\Desktop\Time\obj\Debug\Time.csproj.CoreCompileInputs.cache
+C:\Users\jayvo\Desktop\Time\obj\Debug\Time.exe
+C:\Users\jayvo\Desktop\Time\obj\Debug\Time.pdb
+C:\Users\jayvo\Desktop\Time\obj\Debug\Time.Time.resources

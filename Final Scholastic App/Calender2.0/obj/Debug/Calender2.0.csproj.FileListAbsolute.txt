@@ -1,0 +1,70 @@
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2.0.csproj.AssemblyReference.cache
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2._0.EventForm.resources
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2._0.Form1.resources
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2._0.Form2.resources
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2._0.UserControlBlank.resources
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2._0.UserControlDays.resources
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2.0.csproj.GenerateResource.cache
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\bin\Debug\EventList.mdf
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\bin\Debug\EventList_log.ldf
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2._0.Properties.Resources.resources
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2.0.csproj.CoreCompileInputs.cache
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2.0.exe
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\obj\Debug\Calender2.0.pdb
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\bin\Debug\Calender2.0.exe.config
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\bin\Debug\Calender2.0.exe
+\\Client\H$\Downloads\CSCI3037\Calender2.0\Calender2.0\bin\Debug\Calender2.0.pdb
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\bin\Debug\EventList.mdf
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\bin\Debug\EventList_log.ldf
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\bin\Debug\Calender2.0.exe.config
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\bin\Debug\Calender2.0.exe
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\bin\Debug\Calender2.0.pdb
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2.0.csproj.AssemblyReference.cache
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2._0.EventForm.resources
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2._0.Form1.resources
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2._0.Form2.resources
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2._0.Properties.Resources.resources
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2._0.UserControlBlank.resources
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2._0.UserControlDays.resources
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2.0.csproj.GenerateResource.cache
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2.0.csproj.CoreCompileInputs.cache
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2.0.exe
+\\vdifs\Users$\fa7j\My Documents\Calender2.0 c\Calender2.0\obj\Debug\Calender2.0.pdb
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\bin\Debug\EventList.mdf
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\bin\Debug\EventList_log.ldf
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.exe.config
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.exe
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.pdb
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.csproj.AssemblyReference.cache
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.csproj.SuggestedBindingRedirects.cache
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.EventForm.resources
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.Form1.resources
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.Form2.resources
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.Properties.Resources.resources
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.UserControlBlank.resources
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.UserControlDays.resources
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.csproj.GenerateResource.cache
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.csproj.CoreCompileInputs.cache
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.exe
+C:\Users\jayvo\Desktop\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.pdb
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.csproj.AssemblyReference.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.csproj.SuggestedBindingRedirects.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.EventForm.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.Form1.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.Form2.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Scholastic_App.Homepage.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Scholastic_App.Resourcesss.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.Properties.Resources.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.UserControlBlank.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.UserControlDays.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.csproj.GenerateResource.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.csproj.CoreCompileInputs.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.exe
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.pdb
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Time.Time.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Scholastic_App.Games.GamesForm.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\EventList.mdf
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\EventList_log.ldf
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.exe.config
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.exe
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.pdb

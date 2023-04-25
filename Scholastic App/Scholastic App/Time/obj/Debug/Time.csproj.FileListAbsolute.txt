@@ -1,0 +1,4 @@
+C:\Users\jayvo\Desktop\VS Group APP newnew\Scholastic App\Scholastic App\Time\obj\Debug\Time.csproj.AssemblyReference.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Scholastic App\Scholastic App\Time\obj\Debug\Time.csproj.SuggestedBindingRedirects.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Scholastic App\Scholastic App\Time\obj\Debug\Time.Time.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Scholastic App\Scholastic App\Time\obj\Debug\Time.csproj.GenerateResource.cache

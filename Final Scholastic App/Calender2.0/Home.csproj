@@ -1,0 +1,1179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51CC2D33-2654-4036-82CC-E0B9A74724E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Calender2._0</RootNamespace>
+    <AssemblyName>Calender2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.Core.3.7.100.14\lib\net45\AWSSDK.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityToken, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.SecurityToken.3.7.100.14\lib\net45\AWSSDK.SecurityToken.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DnsClient, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>..\packages\DnsClient.1.6.1\lib\net471\DnsClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.19.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.19.1\lib\net472\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.19.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.19.1\lib\net472\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.19.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.19.1\lib\net472\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Libmongocrypt, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Libmongocrypt.1.7.0\lib\net472\MongoDB.Libmongocrypt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.30.1.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpCompress.0.30.1\lib\net461\SharpCompress.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Snappier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a1b25124e6e13a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Snappier.1.0.0\lib\netstandard2.0\Snappier.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.6.2.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.6.2\lib\net461\ZstdSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventListDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarForm1.Designer.cs">
+      <DependentUpon>CalendarForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarForm2.Designer.cs">
+      <DependentUpon>CalendarForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flashcards\AddFlashcardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flashcards\AddFlashcardForm.designer.cs">
+      <DependentUpon>AddFlashcardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flashcards\CenteredTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Flashcards\Flashcard.cs" />
+    <Compile Include="Flashcards\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flashcards\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Games\GamesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\Games\GamesForm.designer.cs">
+      <DependentUpon>GamesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\Home.designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Program.cs" />
+    <Compile Include="Home\Resourcesss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\Resourcesss.designer.cs">
+      <DependentUpon>Resourcesss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Time\Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\Time\Time.designer.cs">
+      <DependentUpon>Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarForm1.resx">
+      <DependentUpon>CalendarForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarForm2.resx">
+      <DependentUpon>CalendarForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flashcards\AddFlashcardForm.resx">
+      <DependentUpon>AddFlashcardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flashcards\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\Games\GamesForm.resx">
+      <DependentUpon>GamesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\Resourcesss.resx">
+      <DependentUpon>Resourcesss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\Time\Time.resx">
+      <DependentUpon>Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EventDataSet.xsc">
+      <DependentUpon>EventDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EventDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventDataSet.xss">
+      <DependentUpon>EventDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EventListDataSet.xsc">
+      <DependentUpon>EventListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EventListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventListDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventListDataSet.xss">
+      <DependentUpon>EventListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Flashcards\App.config" />
+    <None Include="Flashcards\Brainiac.csproj" />
+    <None Include="Flashcards\libmongocrypt.dylib" />
+    <None Include="Flashcards\libmongocrypt.so" />
+    <None Include="Flashcards\packages.config" />
+    <None Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\.signature.p7s" />
+    <None Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\AWSSDK.Core.3.7.100.14.nupkg" />
+    <None Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\tools\account-management.ps1" />
+    <None Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\.signature.p7s" />
+    <None Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\AWSSDK.SecurityToken.3.7.100.14.nupkg" />
+    <None Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\tools\install.ps1" />
+    <None Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\tools\uninstall.ps1" />
+    <None Include="Flashcards\packages\DnsClient.1.6.1\.signature.p7s" />
+    <None Include="Flashcards\packages\DnsClient.1.6.1\DnsClient.1.6.1.nupkg" />
+    <None Include="Flashcards\packages\MetroFramework.1.2.0.3\.signature.p7s" />
+    <None Include="Flashcards\packages\MetroFramework.1.2.0.3\MetroFramework.1.2.0.3.nupkg" />
+    <None Include="Flashcards\packages\MetroFramework.Design.1.2.0.3\.signature.p7s" />
+    <None Include="Flashcards\packages\MetroFramework.Design.1.2.0.3\MetroFramework.Design.1.2.0.3.nupkg" />
+    <None Include="Flashcards\packages\MetroFramework.Design.1.2.0.3\Tools\install.ps1" />
+    <None Include="Flashcards\packages\MetroFramework.Fonts.1.2.0.3\.signature.p7s" />
+    <None Include="Flashcards\packages\MetroFramework.Fonts.1.2.0.3\MetroFramework.Fonts.1.2.0.3.nupkg" />
+    <None Include="Flashcards\packages\MetroFramework.RunTime.1.2.0.3\.signature.p7s" />
+    <None Include="Flashcards\packages\MetroFramework.RunTime.1.2.0.3\MetroFramework.RunTime.1.2.0.3.nupkg" />
+    <None Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\.signature.p7s" />
+    <None Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\Microsoft.Bcl.AsyncInterfaces.5.0.0.nupkg" />
+    <None Include="Flashcards\packages\Microsoft.Extensions.Logging.Abstractions.2.0.0\.signature.p7s" />
+    <None Include="Flashcards\packages\Microsoft.Extensions.Logging.Abstractions.2.0.0\Microsoft.Extensions.Logging.Abstractions.2.0.0.nupkg" />
+    <None Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\.signature.p7s" />
+    <None Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\Microsoft.Win32.Registry.5.0.0.nupkg" />
+    <None Include="Flashcards\packages\MongoDB.Bson.2.19.1\.signature.p7s" />
+    <None Include="Flashcards\packages\MongoDB.Bson.2.19.1\MongoDB.Bson.2.19.1.nupkg" />
+    <None Include="Flashcards\packages\MongoDB.Driver.2.19.1\.signature.p7s" />
+    <None Include="Flashcards\packages\MongoDB.Driver.2.19.1\MongoDB.Driver.2.19.1.nupkg" />
+    <None Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\.signature.p7s" />
+    <None Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\MongoDB.Driver.Core.2.19.1.nupkg" />
+    <None Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\THIRD-PARTY-NOTICES" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\.signature.p7s" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\build\MongoDB.Libmongocrypt.targets" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\net472\libmongocrypt.dylib" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\net472\libmongocrypt.so" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\netstandard2.0\libmongocrypt.dylib" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\netstandard2.0\libmongocrypt.so" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\netstandard2.1\libmongocrypt.dylib" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\netstandard2.1\libmongocrypt.so" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\content\libmongocrypt.dylib" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\content\libmongocrypt.so" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\MongoDB.Libmongocrypt.1.7.0.nupkg" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\runtimes\linux\native\libmongocrypt.so" />
+    <None Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\runtimes\osx\native\libmongocrypt.dylib" />
+    <None Include="Flashcards\packages\SharpCompress.0.30.1\.signature.p7s" />
+    <None Include="Flashcards\packages\SharpCompress.0.30.1\SharpCompress.0.30.1.nupkg" />
+    <None Include="Flashcards\packages\Snappier.1.0.0\.signature.p7s" />
+    <None Include="Flashcards\packages\Snappier.1.0.0\Snappier.1.0.0.nupkg" />
+    <None Include="Flashcards\packages\System.Buffers.4.5.1\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Buffers.4.5.1\lib\netcoreapp2.0\_._" />
+    <None Include="Flashcards\packages\System.Buffers.4.5.1\lib\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Buffers.4.5.1\ref\netcoreapp2.0\_._" />
+    <None Include="Flashcards\packages\System.Buffers.4.5.1\ref\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Buffers.4.5.1\System.Buffers.4.5.1.nupkg" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\net45\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\win8\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\wp80\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\wpa81\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\net45\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\win8\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\wp80\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\wpa81\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.IO.4.3.0\System.IO.4.3.0.nupkg" />
+    <None Include="Flashcards\packages\System.Memory.4.5.4\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Memory.4.5.4\lib\netcoreapp2.1\_._" />
+    <None Include="Flashcards\packages\System.Memory.4.5.4\ref\netcoreapp2.1\_._" />
+    <None Include="Flashcards\packages\System.Memory.4.5.4\System.Memory.4.5.4.nupkg" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\monoandroid10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\monotouch10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\net45\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\portable-net45+win8+wpa81\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\win8\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\wpa81\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\Xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\monoandroid10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\monotouch10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\net45\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\portable-net45+win8+wpa81\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\win8\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\wpa81\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\Xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Net.Http.4.3.4\System.Net.Http.4.3.4.nupkg" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\netcoreapp2.0\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\netcoreapp2.0\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\System.Numerics.Vectors.4.5.0.nupkg" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\net45\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\portable-net45+win8+wp80+wpa81\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\win8\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\wp80\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\wpa81\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\net45\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\portable-net45+win8+wp80+wpa81\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\win8\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\wp80\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\wpa81\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.4.3.0\System.Runtime.4.3.0.nupkg" />
+    <None Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\System.Runtime.CompilerServices.Unsafe.5.0.0.nupkg" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\System.Runtime.InteropServices.RuntimeInformation.4.3.0.nupkg" />
+    <None Include="Flashcards\packages\System.Security.AccessControl.5.0.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Security.AccessControl.5.0.0\lib\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Security.AccessControl.5.0.0\runtimes\win\lib\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Security.AccessControl.5.0.0\System.Security.AccessControl.5.0.0.nupkg" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\System.Security.Cryptography.Algorithms.4.3.0.nupkg" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\System.Security.Cryptography.Encoding.4.3.0.nupkg" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\System.Security.Cryptography.Primitives.4.3.0.nupkg" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\System.Security.Cryptography.X509Certificates.4.3.0.nupkg" />
+    <None Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\lib\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\uap10.0.16299\_._" />
+    <None Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\System.Security.Principal.Windows.5.0.0.nupkg" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\System.Text.Encoding.CodePages.5.0.0.nupkg" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\.signature.p7s" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netcoreapp2.1\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\ref\MonoAndroid10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\ref\MonoTouch10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\ref\netcoreapp2.1\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinios10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinmac20\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarintvos10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinwatchos10\_._" />
+    <None Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\System.Threading.Tasks.Extensions.4.5.4.nupkg" />
+    <None Include="Flashcards\packages\ZstdSharp.Port.0.6.2\.signature.p7s" />
+    <None Include="Flashcards\packages\ZstdSharp.Port.0.6.2\ZstdSharp.Port.0.6.2.nupkg" />
+    <None Include="Home\Scholastic App.csproj" />
+    <None Include="Home\Time\App.config" />
+    <None Include="Home\Time\Time.csproj" />
+    <None Include="libmongocrypt.dylib" />
+    <None Include="libmongocrypt.so" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EventList.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EventList_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>EventList.mdf</DependentUpon>
+    </Content>
+    <Content Include="Flashcards\Brainiac.csproj.user" />
+    <Content Include="Flashcards\MetroFramework.txt" />
+    <Content Include="Flashcards\mongocrypt.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\net35\AWSSDK.Core.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\net35\AWSSDK.Core.pdb" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\net35\AWSSDK.Core.xml" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\net45\AWSSDK.Core.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\net45\AWSSDK.Core.pdb" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\net45\AWSSDK.Core.xml" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\netcoreapp3.1\AWSSDK.Core.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\netcoreapp3.1\AWSSDK.Core.pdb" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\netcoreapp3.1\AWSSDK.Core.xml" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\netstandard2.0\AWSSDK.Core.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\netstandard2.0\AWSSDK.Core.pdb" />
+    <Content Include="Flashcards\packages\AWSSDK.Core.3.7.100.14\lib\netstandard2.0\AWSSDK.Core.xml" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\net35\AWSSDK.SecurityToken.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\net35\AWSSDK.SecurityToken.pdb" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\net35\AWSSDK.SecurityToken.xml" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\net45\AWSSDK.SecurityToken.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\net45\AWSSDK.SecurityToken.pdb" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\net45\AWSSDK.SecurityToken.xml" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\netcoreapp3.1\AWSSDK.SecurityToken.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\netcoreapp3.1\AWSSDK.SecurityToken.pdb" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\netcoreapp3.1\AWSSDK.SecurityToken.xml" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\netstandard2.0\AWSSDK.SecurityToken.dll" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\netstandard2.0\AWSSDK.SecurityToken.pdb" />
+    <Content Include="Flashcards\packages\AWSSDK.SecurityToken.3.7.100.14\lib\netstandard2.0\AWSSDK.SecurityToken.xml" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\icon.png" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\net45\DnsClient.dll" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\net45\DnsClient.xml" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\net471\DnsClient.dll" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\net471\DnsClient.xml" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\net5.0\DnsClient.dll" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\net5.0\DnsClient.xml" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\netstandard1.3\DnsClient.dll" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\netstandard1.3\DnsClient.xml" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\netstandard2.0\DnsClient.dll" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\netstandard2.0\DnsClient.xml" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\netstandard2.1\DnsClient.dll" />
+    <Content Include="Flashcards\packages\DnsClient.1.6.1\lib\netstandard2.1\DnsClient.xml" />
+    <Content Include="Flashcards\packages\MetroFramework.1.2.0.3\Content\MetroFramework.txt" />
+    <Content Include="Flashcards\packages\MetroFramework.1.2.0.3\README.TXT" />
+    <Content Include="Flashcards\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll" />
+    <Content Include="Flashcards\packages\MetroFramework.Design.1.2.0.3\README.TXT" />
+    <Content Include="Flashcards\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll" />
+    <Content Include="Flashcards\packages\MetroFramework.Fonts.1.2.0.3\README.TXT" />
+    <Content Include="Flashcards\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll" />
+    <Content Include="Flashcards\packages\MetroFramework.RunTime.1.2.0.3\README.TXT" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\Icon.png" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\version.txt" />
+    <Content Include="Flashcards\packages\Microsoft.Extensions.Logging.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Extensions.Logging.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\Icon.png" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\lib\net46\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\lib\netstandard1.3\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\lib\netstandard2.0\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\lib\netstandard2.0\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\net461\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\net461\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\net46\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\de\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\es\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\fr\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\it\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\ja\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\ko\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\ru\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\zh-hans\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard1.3\zh-hant\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard2.0\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\ref\netstandard2.0\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\runtimes\win\lib\net461\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\runtimes\win\lib\net461\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\runtimes\win\lib\net46\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\runtimes\win\lib\netstandard1.3\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.xml" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\Microsoft.Win32.Registry.5.0.0\version.txt" />
+    <Content Include="Flashcards\packages\MongoDB.Bson.2.19.1\lib\net472\MongoDB.Bson.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Bson.2.19.1\lib\net472\MongoDB.Bson.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Bson.2.19.1\lib\netstandard2.0\MongoDB.Bson.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Bson.2.19.1\lib\netstandard2.0\MongoDB.Bson.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Bson.2.19.1\lib\netstandard2.1\MongoDB.Bson.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Bson.2.19.1\lib\netstandard2.1\MongoDB.Bson.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Bson.2.19.1\License.txt" />
+    <Content Include="Flashcards\packages\MongoDB.Bson.2.19.1\packageIcon.png" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.2.19.1\lib\net472\MongoDB.Driver.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.2.19.1\lib\net472\MongoDB.Driver.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.2.19.1\lib\netstandard2.0\MongoDB.Driver.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.2.19.1\lib\netstandard2.0\MongoDB.Driver.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.2.19.1\lib\netstandard2.1\MongoDB.Driver.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.2.19.1\lib\netstandard2.1\MongoDB.Driver.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.2.19.1\License.txt" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.2.19.1\packageIcon.png" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\lib\net472\MongoDB.Driver.Core.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\lib\net472\MongoDB.Driver.Core.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\lib\netstandard2.0\MongoDB.Driver.Core.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\lib\netstandard2.0\MongoDB.Driver.Core.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\lib\netstandard2.1\MongoDB.Driver.Core.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\lib\netstandard2.1\MongoDB.Driver.Core.xml" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\License.txt" />
+    <Content Include="Flashcards\packages\MongoDB.Driver.Core.2.19.1\packageIcon.png" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\net472\mongocrypt.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\netstandard2.0\mongocrypt.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\contentFiles\any\netstandard2.1\mongocrypt.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\content\mongocrypt.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\lib\net472\MongoDB.Libmongocrypt.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\lib\netstandard2.0\MongoDB.Libmongocrypt.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\lib\netstandard2.1\MongoDB.Libmongocrypt.dll" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\License.txt" />
+    <Content Include="Flashcards\packages\MongoDB.Libmongocrypt.1.7.0\runtimes\win\native\mongocrypt.dll" />
+    <Content Include="Flashcards\packages\SharpCompress.0.30.1\lib\net461\SharpCompress.dll" />
+    <Content Include="Flashcards\packages\SharpCompress.0.30.1\lib\net5.0\SharpCompress.dll" />
+    <Content Include="Flashcards\packages\SharpCompress.0.30.1\lib\netcoreapp3.1\SharpCompress.dll" />
+    <Content Include="Flashcards\packages\SharpCompress.0.30.1\lib\netstandard2.0\SharpCompress.dll" />
+    <Content Include="Flashcards\packages\SharpCompress.0.30.1\lib\netstandard2.1\SharpCompress.dll" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\COPYING.txt" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\lib\net5.0\Snappier.dll" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\lib\net5.0\Snappier.xml" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\lib\netcoreapp3.0\Snappier.dll" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\lib\netcoreapp3.0\Snappier.xml" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\lib\netstandard2.0\Snappier.dll" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\lib\netstandard2.0\Snappier.xml" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\lib\netstandard2.1\Snappier.dll" />
+    <Content Include="Flashcards\packages\Snappier.1.0.0\lib\netstandard2.1\Snappier.xml" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.xml" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.xml" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.dll" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.xml" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\ref\net45\System.Buffers.dll" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\ref\net45\System.Buffers.xml" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.dll" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.xml" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.dll" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.xml" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\System.Buffers.4.5.1\version.txt" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\dotnet_library_license.txt" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\lib\net462\System.IO.dll" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\net462\System.IO.dll" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\de\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\es\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\fr\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\it\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\ja\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\ko\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\ru\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\System.IO.dll" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\zh-hans\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netcore50\zh-hant\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\de\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\es\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\fr\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\it\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\ja\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\ko\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\ru\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\System.IO.dll" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\zh-hans\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.0\zh-hant\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\de\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\es\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\fr\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\it\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\ja\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\ko\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\ru\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\System.IO.dll" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\zh-hans\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.3\zh-hant\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\de\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\es\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\fr\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\it\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\ja\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\ko\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\ru\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\System.IO.dll" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\zh-hans\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ref\netstandard1.5\zh-hant\System.IO.xml" />
+    <Content Include="Flashcards\packages\System.IO.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\lib\net461\System.Memory.xml" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\lib\netstandard1.1\System.Memory.dll" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\lib\netstandard1.1\System.Memory.xml" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.dll" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.xml" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\System.Memory.4.5.4\version.txt" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\dotnet_library_license.txt" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\ref\net46\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\ref\netcore50\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\ref\netstandard1.1\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\ref\netstandard1.3\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\runtimes\unix\lib\netstandard1.6\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\runtimes\win\lib\net46\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\runtimes\win\lib\netcore50\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\runtimes\win\lib\netstandard1.3\System.Net.Http.dll" />
+    <Content Include="Flashcards\packages\System.Net.Http.4.3.4\ThirdPartyNotices.txt" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.xml" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.xml" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.dll" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.xml" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.dll" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.xml" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\System.Numerics.Vectors.4.5.0\version.txt" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\dotnet_library_license.txt" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\net462\System.Runtime.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\de\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\es\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\fr\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\it\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\ja\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\ko\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\ru\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\System.Runtime.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\zh-hans\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netcore50\zh-hant\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\de\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\es\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\fr\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\it\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\ja\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\ko\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\ru\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\System.Runtime.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\zh-hans\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.0\zh-hant\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\de\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\es\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\fr\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\it\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\ja\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\ko\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\ru\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\System.Runtime.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\zh-hans\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.2\zh-hant\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\de\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\es\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\fr\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\it\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\ja\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\ko\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\ru\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\System.Runtime.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\zh-hans\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.3\zh-hant\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\de\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\es\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\fr\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\it\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\ja\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\ko\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\ru\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\System.Runtime.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\zh-hans\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ref\netstandard1.5\zh-hant\System.Runtime.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\Icon.png" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\net461\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\net461\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard1.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.1\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.1\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\version.txt" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\dotnet_library_license.txt" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\win8\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\wpa81\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\aot\lib\netcore50\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\unix\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\win\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\win\lib\netcore50\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\runtimes\win\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Flashcards\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\Icon.png" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\lib\net46\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\lib\netstandard1.3\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\lib\netstandard2.0\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\lib\netstandard2.0\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\net461\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\net461\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\net46\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\de\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\es\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\fr\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\it\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\ja\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\ko\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\ru\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\zh-hans\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard1.3\zh-hant\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard2.0\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\ref\netstandard2.0\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\runtimes\win\lib\net461\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\runtimes\win\lib\net461\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\runtimes\win\lib\net46\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.xml" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\runtimes\win\lib\netstandard1.3\System.Security.AccessControl.dll" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\System.Security.AccessControl.5.0.0\version.txt" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\dotnet_library_license.txt" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net46\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\net461\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\net463\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\net46\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\netstandard1.3\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\netstandard1.4\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ref\netstandard1.6\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\runtimes\osx\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\runtimes\unix\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\runtimes\win\lib\net461\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\runtimes\win\lib\net463\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\runtimes\win\lib\net46\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\runtimes\win\lib\netcore50\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\runtimes\win\lib\netstandard1.6\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Algorithms.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\dotnet_library_license.txt" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\net46\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\de\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\es\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\fr\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\it\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\ja\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\ko\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\ru\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\zh-hans\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ref\netstandard1.3\zh-hant\System.Security.Cryptography.Encoding.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\runtimes\unix\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\runtimes\win\lib\net46\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Encoding.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\dotnet_library_license.txt" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\lib\netstandard1.3\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ref\net46\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ref\netstandard1.3\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.Primitives.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\dotnet_library_license.txt" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net46\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\net461\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\net46\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\de\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\es\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\fr\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\it\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\ja\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\ko\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\ru\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\zh-hans\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.3\zh-hant\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\de\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\es\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\fr\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\it\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\ja\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\ko\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\ru\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\zh-hans\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ref\netstandard1.4\zh-hant\System.Security.Cryptography.X509Certificates.xml" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\runtimes\unix\lib\netstandard1.6\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\runtimes\win\lib\net461\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\runtimes\win\lib\net46\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\runtimes\win\lib\netcore50\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\runtimes\win\lib\netstandard1.6\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Flashcards\packages\System.Security.Cryptography.X509Certificates.4.3.0\ThirdPartyNotices.txt" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\Icon.png" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\lib\net46\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\lib\netstandard1.3\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\lib\netstandard2.0\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\lib\netstandard2.0\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\net461\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\net461\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\net46\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netcoreapp3.0\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netcoreapp3.0\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\de\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\es\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\fr\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\it\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\ja\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\ko\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\ru\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\zh-hans\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard1.3\zh-hant\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard2.0\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\ref\netstandard2.0\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\unix\lib\netcoreapp2.0\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\unix\lib\netcoreapp2.0\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\net461\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\net461\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\net46\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\netcoreapp2.0\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\netcoreapp2.0\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.xml" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\runtimes\win\lib\netstandard1.3\System.Security.Principal.Windows.dll" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\System.Security.Principal.Windows.5.0.0\version.txt" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\Icon.png" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.xml" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\net46\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\netstandard1.3\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\netstandard2.0\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\lib\netstandard2.0\System.Text.Encoding.CodePages.xml" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\runtimes\win\lib\net461\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\runtimes\win\lib\net461\System.Text.Encoding.CodePages.xml" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.xml" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\runtimes\win\lib\netstandard1.3\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\runtimes\win\lib\netstandard2.0\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\runtimes\win\lib\netstandard2.0\System.Text.Encoding.CodePages.xml" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\System.Text.Encoding.CodePages.5.0.0\version.txt" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard1.0\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard1.0\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard2.0\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\LICENSE.TXT" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\useSharedDesignerContext.txt" />
+    <Content Include="Flashcards\packages\System.Threading.Tasks.Extensions.4.5.4\version.txt" />
+    <Content Include="Flashcards\packages\ZstdSharp.Port.0.6.2\lib\net461\ZstdSharp.dll" />
+    <Content Include="Flashcards\packages\ZstdSharp.Port.0.6.2\lib\net5.0\ZstdSharp.dll" />
+    <Content Include="Flashcards\packages\ZstdSharp.Port.0.6.2\lib\net6.0\ZstdSharp.dll" />
+    <Content Include="Flashcards\packages\ZstdSharp.Port.0.6.2\lib\netcoreapp3.1\ZstdSharp.dll" />
+    <Content Include="Flashcards\packages\ZstdSharp.Port.0.6.2\lib\netstandard2.0\ZstdSharp.dll" />
+    <Content Include="Flashcards\packages\ZstdSharp.Port.0.6.2\lib\netstandard2.1\ZstdSharp.dll" />
+    <Content Include="Home\Scholastic App.csproj.user" />
+    <Content Include="mongocrypt.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MongoDB.Libmongocrypt.1.7.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.7.0\build\MongoDB.Libmongocrypt.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MongoDB.Libmongocrypt.1.7.0\build\MongoDB.Libmongocrypt.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Libmongocrypt.1.7.0\build\MongoDB.Libmongocrypt.targets'))" />
+  </Target>
+</Project>

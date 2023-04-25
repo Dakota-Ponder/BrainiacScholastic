@@ -1,0 +1,88 @@
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.exe.config
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.exe
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\Calender2.0.pdb
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Home.csproj.AssemblyReference.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Home.csproj.SuggestedBindingRedirects.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.EventForm.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Scholastic_App.Games.GamesForm.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Scholastic_App.Homepage.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Scholastic_App.Resourcesss.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Time.Time.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.Properties.Resources.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.UserControlBlank.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.UserControlDays.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Home.csproj.GenerateResource.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Home.csproj.CoreCompileInputs.cache
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.exe
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2.0.pdb
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.CalendarForm1.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\obj\Debug\Calender2._0.CalendarForm2.resources
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\EventList.mdf
+C:\Users\jayvo\Desktop\VS Group APP newnew\Calender2.0 yay\Calender2.0\bin\Debug\EventList_log.ldf
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\EventList.mdf
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\EventList_log.ldf
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Calender2.0.exe.config
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Calender2.0.exe
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Calender2.0.pdb
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Home.csproj.AssemblyReference.cache
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Home.csproj.SuggestedBindingRedirects.cache
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2._0.EventForm.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2._0.CalendarForm1.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2._0.CalendarForm2.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Scholastic_App.Games.GamesForm.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Scholastic_App.Homepage.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Scholastic_App.Resourcesss.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Time.Time.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2._0.Properties.Resources.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2._0.UserControlBlank.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2._0.UserControlDays.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Home.csproj.GenerateResource.cache
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Home.csproj.CoreCompileInputs.cache
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2.0.exe
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2.0.pdb
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Brainiac.AddFlashcardForm.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Brainiac.Form1.resources
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Calender2.0.exe.config
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\mongocrypt.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\AWSSDK.Core.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\AWSSDK.SecurityToken.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\DnsClient.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\MongoDB.Bson.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\MongoDB.Driver.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\SharpCompress.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Snappier.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Buffers.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Memory.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Security.AccessControl.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\ZstdSharp.dll
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\AWSSDK.Core.pdb
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\AWSSDK.Core.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\AWSSDK.SecurityToken.pdb
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\AWSSDK.SecurityToken.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\DnsClient.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\MongoDB.Bson.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\MongoDB.Driver.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\Snappier.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Buffers.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Memory.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Security.AccessControl.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\dlpon\OneDrive\Desktop\VS Group APP newnew\Final Scholastic App\Calender2.0\obj\Debug\Home.csproj.CopyComplete

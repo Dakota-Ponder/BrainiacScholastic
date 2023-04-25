@@ -1,0 +1,17 @@
+C:\Users\wrigh\source\repos\timer\bin\Release\net6.0-windows\timer.exe
+C:\Users\wrigh\source\repos\timer\bin\Release\net6.0-windows\timer.deps.json
+C:\Users\wrigh\source\repos\timer\bin\Release\net6.0-windows\timer.runtimeconfig.json
+C:\Users\wrigh\source\repos\timer\bin\Release\net6.0-windows\timer.dll
+C:\Users\wrigh\source\repos\timer\bin\Release\net6.0-windows\timer.pdb
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.csproj.AssemblyReference.cache
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.Timer.resources
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.csproj.GenerateResource.cache
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.AssemblyInfoInputs.cache
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.AssemblyInfo.cs
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.csproj.CoreCompileInputs.cache
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.dll
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\refint\timer.dll
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.pdb
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\timer.genruntimeconfig.cache
+C:\Users\wrigh\source\repos\timer\obj\Release\net6.0-windows\ref\timer.dll
