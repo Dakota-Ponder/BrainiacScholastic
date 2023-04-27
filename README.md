@@ -51,4 +51,4 @@ Contributions to the Brainiac App are welcome. Please follow these steps to cont
 
 - [Visual Studio](https://visualstudio.microsoft.com/)
 - [MongoDB](https://www.mongodb.com/)
-- [Unity] (https://unity.com/)
+- [Unity](https://unity.com/)
