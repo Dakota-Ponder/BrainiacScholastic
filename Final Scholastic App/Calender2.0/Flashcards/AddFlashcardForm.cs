@@ -51,5 +51,10 @@ namespace Brainiac
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
 
         }
+
+        private void QuestionTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

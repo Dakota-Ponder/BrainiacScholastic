@@ -44,6 +44,7 @@
             this.QuestionTextBox.Name = "QuestionTextBox";
             this.QuestionTextBox.Size = new System.Drawing.Size(649, 100);
             this.QuestionTextBox.TabIndex = 0;
+            this.QuestionTextBox.TextChanged += new System.EventHandler(this.QuestionTextBox_TextChanged);
             // 
             // AnswerTextBox
             // 
