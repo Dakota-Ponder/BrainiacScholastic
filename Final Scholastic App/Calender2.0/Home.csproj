@@ -258,6 +258,7 @@
       <DependentUpon>Time.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runner game\Endless Runner Game\Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Unity Projects\BlackJack\Assets\buttons.cs" />
     <Compile Include="Unity Projects\BlackJack\Assets\cardScript.cs" />
     <Compile Include="Unity Projects\BlackJack\Assets\deckScript.cs" />
@@ -693,6 +694,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Runner game\Endless Runner Game\.vsconfig" />
+    <None Include="Runner game\Endless Runner Game\.vs\Endless Runner Game\FileContentIndex\5ba14c74-07ca-450e-849f-debcf9c645d3.vsidx" />
+    <None Include="Runner game\Endless Runner Game\.vs\Endless Runner Game\FileContentIndex\9c386914-0482-44ad-9b13-8f0d82242853.vsidx" />
+    <None Include="Runner game\Endless Runner Game\.vs\Endless Runner Game\FileContentIndex\ecc54cdb-0abf-4abc-b29c-8a02eab5c533.vsidx" />
+    <None Include="Runner game\Endless Runner Game\.vs\Endless Runner Game\FileContentIndex\eef4819b-bda5-4fa9-b585-65546277e1b3.vsidx" />
+    <None Include="Runner game\Endless Runner Game\.vs\Endless Runner Game\FileContentIndex\read.lock" />
+    <None Include="Runner game\Endless Runner Game\.vs\Endless Runner Game\v17\.suo" />
+    <None Include="Runner game\Endless Runner Game\Assembly-CSharp.csproj" />
+    <None Include="Runner game\Endless Runner Game\Assets\Art.meta" />
+    <None Include="Runner game\Endless Runner Game\Assets\Art\spritesheet_players.png.meta" />
+    <None Include="Runner game\Endless Runner Game\Assets\Scenes.meta" />
+    <None Include="Runner game\Endless Runner Game\Assets\Scenes\Endless.unity" />
+    <None Include="Runner game\Endless Runner Game\Assets\Scenes\Endless.unity.meta" />
+    <None Include="Runner game\Endless Runner Game\Assets\Scripts.meta" />
+    <None Include="Runner game\Endless Runner Game\Assets\Scripts\PlayerControl.cs.meta" />
+    <None Include="Runner game\Endless Runner Game\Library\AnnotationManager" />
+    <None Include="Runner game\Endless Runner Game\Library\APIUpdater\project-dependencies.graph" />
     <None Include="Unity Projects\BlackJack\.vsconfig" />
     <None Include="Unity Projects\BlackJack\.vs\BlackJack\FileContentIndex\0d9bed64-a4a4-4132-95f3-59c2fe6ae440.vsidx" />
     <None Include="Unity Projects\BlackJack\.vs\BlackJack\FileContentIndex\0fc296d0-72c5-4601-971c-eaed6e7f0993.vsidx" />
@@ -9606,6 +9624,8 @@
     <Content Include="Flashcards\packages\ZstdSharp.Port.0.6.2\lib\netstandard2.1\ZstdSharp.dll" />
     <Content Include="Home\Scholastic App.csproj.user" />
     <Content Include="mongocrypt.dll" />
+    <Content Include="Runner game\Endless Runner Game\Assets\Art\spritesheet_players.png" />
+    <Content Include="Runner game\Endless Runner Game\Endless Runner Game.sln" />
     <Content Include="Unity Projects\BlackJack\Assets\PlayingCards\BackColor_Black.png" />
     <Content Include="Unity Projects\BlackJack\Assets\PlayingCards\BackColor_Red.png" />
     <Content Include="Unity Projects\BlackJack\Assets\PlayingCards\BlackJack Sprites\BackColor_Blue.png" />
@@ -11095,6 +11115,7 @@
     <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Runner game\Endless Runner Game\.vs\Endless Runner Game\FileContentIndex\merges\" />
     <Folder Include="Unity Projects\BlackJack\.vs\BlackJack\FileContentIndex\merges\" />
     <Folder Include="Unity Projects\BlackJack\Assets\PlayingCards\BlackJack Sprites\Image\" />
     <Folder Include="Unity Projects\BlackJack\Library\PackageCache\com.unity.2d.animation%409.0.1\Editor\SkinningModule\Lib\x86_64\BoundedBiharmonicWeightsModule.bundle\Contents\MacOS\" />
